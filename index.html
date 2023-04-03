@@ -5,20 +5,27 @@
   <meta charset="UTF-8">
   <title>Matrix Code</title>
   <style>
+    html,
     body {
-      background-color: black;
-      color: green;
-      font-family: monospace;
-      font-size: 16px;
-      line-height: 1.5;
       margin: 0;
       padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
     }
   </style>
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
   <script src="matrix.js"></script>
+  <script>
+    const canvas = document.getElementById('canvas');
+    matrixCode(canvas);
+  </script>
 </body>
 
 </html>
