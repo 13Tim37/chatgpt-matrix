@@ -10,6 +10,9 @@ function createWindow() {
   })
 
   win.loadFile('index.html')
+
+  // Open the DevTools
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
